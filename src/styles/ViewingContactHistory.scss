@@ -1,0 +1,44 @@
+.history {
+   width: 100%;
+   padding-block: .5rem;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+}
+
+.history__item {
+   grid-column: 1 / -1;
+   margin-block-end: .5rem;
+   padding: .75rem 1rem;
+   background-color: #ffffff20;
+   border-radius: 8px;
+   display: grid;
+   grid-template-columns: subgrid;
+   align-items: center;
+   justify-items: start;
+}
+
+.history__item__type,
+.history__item__date {
+   grid-column: span 3;
+}
+
+.history__item__type {
+   min-width: max-content;
+   
+   display: grid;
+   grid-template-columns: subgrid;
+   gap: 1rem;
+   
+   font-size: clamp(.8rem, 2.4vw, 1rem);
+}
+
+.history__item__type__text {
+   white-space: nowrap;
+}
+
+.history__item__date {
+   justify-self: end;
+   
+   color: #888888;
+   font-size: clamp(.8rem, 2vw, .9rem);
+}

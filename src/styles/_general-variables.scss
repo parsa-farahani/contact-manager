@@ -1,0 +1,49 @@
+:root {
+   // base colors
+   --c-bg: #000;
+   --c-fg: #ddd;
+   --c-sec: #789cfdc0;
+   --c-purple: #4C3BCF;
+   --c-blue: #4B70F5;
+   --c-cyan: #3DC2EC;
+   --c-pink: #d32f73;
+   --c-placeholder: #dddddd60;
+   --c-scrollbar-thumb: #ffffffbb;
+   --c-scrollbar-track: #ffffff20;
+
+   // gradients
+   --b-grad: linear-gradient(120deg, #d32f7396, #4B70F5a0, rgb(33, 33, 199), var(--c-cyan));
+
+
+   // base values
+   --b-m: .75rem;
+   --b-p: .75rem;
+   --b-br: 1px solid #7e9aff80;
+   --btn-br: 1px solid #ffffff30;
+   --b-br-r: .25rem;
+
+   // fixed spacings
+   --header-h: 100px;
+   --header-gap: 10px;
+   --page-title-h: 80px;
+   --info-inputs-h: 40px;
+   --edit-contact-btns-cont-h: 70px;
+
+
+   @include md {
+      --header-h: 70px;
+   }
+}
+
+
+// ----------- Sass variables -----------
+$colors: (
+   'bg': var(--c-bg),
+   'fg': var(--c-fg),
+   'sec': var(--c-sec),
+   'purple': var(--c-purple),
+   'blue': var(--c-blue),
+   'cyan': var(--c-cyan),
+   'pink': var(--c-pink),
+   'placeholder': var(--c-placeholder),
+)

@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+ 
+code {
+   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+     monospace;
+}
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+}
+
+
+a:any-link {
+   display: inline-block;
+   color: inherit;
+   text-decoration: none;
+}
+
+
+button,
+code,
+pre,
+samp,
+input,
+input::placeholder,
+textarea,
+textarea::placeholder,
+select,
+option,
+fieldset,
+legend {
+   color: inherit;
+   font-family: inherit;
+   font-size: inherit;
+}
+
+button,
+span,
+label {
+   display: inline-block;
+}
+
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}

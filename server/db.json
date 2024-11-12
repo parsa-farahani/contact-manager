@@ -1,0 +1,143 @@
+{
+  "contacts": [
+    {
+      "fullname": "Parsa 0x04",
+      "avatar": "https://loremflickr.com/100/100/people",
+      "email": "aiiiipa@gmail.com",
+      "phone": "33365564545",
+      "group": "3",
+      "home_address": "123 Maple Lane Springfield SP1 2AB England",
+      "job": "programmer",
+      "id": 1
+    },
+    {
+      "fullname": "Ezio Audi",
+      "avatar": null,
+      "phone": "9991111187",
+      "email": "aiiiipa@gmail.com",
+      "home_address": "123 Maple Lane example SP1 2CB Italy",
+      "job": "assassin",
+      "group": "5",
+      "id": 2
+    },
+    {
+      "fullname": "parsa adih",
+      "avatar": "https://loremflickr.com/100/100/bird",
+      "phone": "99256498444",
+      "email": "",
+      "home_address": "",
+      "job": "",
+      "group": "4",
+      "id": 5
+    },
+    {
+      "fullname": "known",
+      "avatar": "",
+      "phone": "33365564545",
+      "email": "",
+      "home_address": "",
+      "job": "",
+      "group": "4",
+      "id": 6
+    },
+    {
+      "fullname": "ایمان مدائ",
+      "avatar": "",
+      "phone": "33365564545",
+      "email": "",
+      "home_address": "",
+      "job": "",
+      "group": "",
+      "id": 7
+    },
+    {
+      "fullname": "parsa",
+      "avatar": "",
+      "phone": "33365564545",
+      "email": "",
+      "home_address": "",
+      "job": "",
+      "group": "",
+      "id": 8
+    },
+    {
+      "fullname": "sdcsdc",
+      "avatar": "",
+      "phone": "8999125468",
+      "email": "",
+      "home_address": "",
+      "job": "",
+      "group": "",
+      "id": 9
+    },
+    {
+      "fullname": "reza",
+      "avatar": "https://loremflickr.com/100/100/lion",
+      "email": "",
+      "phone": "89925649845",
+      "group": "",
+      "home_address": "",
+      "job": "",
+      "id": 10
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "name": "none"
+    },
+    {
+      "id": 2,
+      "name": "family"
+    },
+    {
+      "id": 3,
+      "name": "colleague"
+    },
+    {
+      "id": 4,
+      "name": "teammate"
+    },
+    {
+      "id": 5,
+      "name": "friend"
+    }
+  ],
+  "histories": [
+    {
+      "id": 1,
+      "data": [
+        {
+          "type": "outgoingCall",
+          "title": "Outgoing",
+          "date": "2024-04-25T15:30:00Z"
+        },
+        {
+          "type": "incomingAnswered",
+          "title": "Answered",
+          "date": "2024-01-04T12:10:00Z"
+        },
+        {
+          "type": "incomingMissed",
+          "title": "Missed",
+          "date": "2024-01-15T09:10:00Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "data": [
+        {
+          "type": "incomingAnswered",
+          "title": "Answered",
+          "date": "2024-01-04T12:10:00Z"
+        },
+        {
+          "type": "incomingMissed",
+          "title": "Missed",
+          "date": "2024-01-15T09:10:00Z"
+        }
+      ]
+    }
+  ]
+}

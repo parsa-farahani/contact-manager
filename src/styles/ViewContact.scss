@@ -1,0 +1,180 @@
+// modules
+@import './breakpoints';
+
+
+.contact {
+   max-height: 100%;
+   overflow-y: auto;
+   padding: 1rem;
+   align-items: center;
+   justify-content: center;
+   
+   @include md {
+      padding: 2rem;
+   }
+}
+
+.contact__title-cont {
+   margin-bottom: 4vh;
+}
+
+.contact__title-cont__img-cont {
+   position: relative;
+   flex-shrink: 0;
+   flex-grow: 0;
+   width: 25vmin;
+   aspect-ratio: 1 / 1;
+   // overflow: clip;
+   border: var(--btn-br);
+   border-radius: calc( 1rem + 2vmin );
+   cursor: pointer;
+   transition: .3s;
+
+   &:hover {
+      border-color: #ffffff70;
+   }
+}
+
+.contact__title-cont__img-cont__img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   border-radius: inherit;
+   display: block;
+   transition: .3s;
+   
+   &:hover {
+      padding: 4px;
+   }
+}
+
+.contact__title-cont__title {
+   position: relative;
+   font-size: clamp(1.2rem, 5vw, 2.5rem);
+}
+
+.contact__edit {
+   position: absolute;
+   translate: 0% -50%;
+   top: 50%;
+   left: calc(100% + 1rem);
+}
+
+.contact__edit__btn:any-link {
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   // padding: 1rem;
+   background-color: transparent;
+   font-size: clamp(1rem, 2vw, 1.3rem);
+
+   &:hover {
+      background-color: #ffffff10 !important;
+   }
+
+   @include md {
+      width: 40px;
+      height: 40px;
+   }
+}
+
+.contact__edit__btn__inner {
+   width: 100%;
+   height: 100%;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.contact__title-cont__title__favourite-mark {
+   width: 30px !important;
+   height: 30px !important;
+}
+
+.contact__details {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.contact__details__table {
+   width: 100%;
+}
+
+.contact__details__table__body {}
+
+.contact__details__table__row,
+.contact__details__table__cell {
+}
+
+.contact__details__table__row {
+   border-bottom: var(--btn-br);
+}
+
+.contact__details__table__cell {
+   padding-block: .5rem;
+}
+
+.contact__details__table__heading {
+   min-width: max-content;
+   width: 20%;
+   font-size: clamp(.9rem, 2vw, 1.4rem);
+}
+
+.contact__details__table__data {
+   font-size: clamp(.8rem, 1.5vw, 1.2rem);
+}
+
+
+
+
+// -------------- avatar modal -----------------
+.contact__avatar-modal-img-cont {
+   width: min(70vmin, 900px);
+   border: 1px solid #ffffff50;
+   border-radius: 10px;
+   overflow: clip;
+}
+
+.contact__avatar-modal-img-cont__img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+
+
+
+// -------------- Skeleton styles ---------------
+.contact-skeleton__img-cont {
+   flex-shrink: 0 !important;
+   flex-grow: 0 !important;
+   width: 30vmin !important;
+   height: 30vmin !important;
+   aspect-ratio: 1 / 1 !important;
+   border-radius: calc( 1rem + 2vmin ) !important;
+}
+
+.contact-skeleton__title {
+   width: min(70vw, 250px) !important;
+   height: 20px !important;
+   // max-width: 400px !important;
+}
+
+.contact-skeleton__details {
+   margin-top: 100px !important;
+}
+
+.contact-skeleton__details__item {
+   width: min(80vw, 900px) !important;
+}
+
+.contact-not-found-alert {
+   position: absolute;
+   left: 50%;
+   top: calc(50% - var(--header-h));
+   translate: -50% -50%;
+}

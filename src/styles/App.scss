@@ -1,0 +1,88 @@
+// modules
+@import './breakpoints';
+
+
+// ----------- header ----------
+.main-header {
+  position: fixed;
+  z-index: 500;
+  inset: 0 0 auto 0;
+  height: calc(var(--header-h) + var(--header-gap));
+  border-bottom: var(--b-br);
+  background-color: var(--c-bg);
+}
+
+// ----------- main ----------
+.main {
+  position: relative;
+  height: calc(100svh - (var(--header-h) + var(--header-gap)));
+  margin-top: calc(var(--header-h) + var(--header-gap));
+
+  @include md {
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5 + 1rem) !important;
+  }
+}
+
+.main__bg {
+
+}
+
+.main__bg__inner {
+  width: clamp(20vw, 70vw, 600px);
+  aspect-ratio: 1 / 1;
+  background-image: var(--b-grad);
+  clip-path: url('#main__bg__svg');
+}
+
+
+
+// ----------- conatct-deletion alert -----------
+.contact-deletion-alert {
+  position: fixed;
+  inset: 0;
+  background-color: #000000bb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-deletion-alert_inner {
+  padding: 1rem;
+  background-color: var(--c-bg);
+  border-radius: 10px;
+  border: var(--b-br);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-deletion-alert__title {
+  margin: 0;
+  padding-block-end: 1rem;
+  border-bottom: 1px solid #ffffff30;
+  font-size: clamp(1rem, 2vw, 2rem);
+  text-align: center;
+}
+
+.contact-deletion-alert__text {
+  margin-block: 1rem;
+  font-size: clamp(1rem, 1vw, 1.2rem);
+}
+
+.contact-deletion-alert__btns-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.contact-deletion-alert__btns-cont__btn {
+  flex: 1;
+}
+
+
+.contact-deletion-alert__btns-cont__btn--no {
+}
+
+.contact-deletion-alert__btns-cont__btn--yes {
+  background-color: var(--c-purple) !important;
+}

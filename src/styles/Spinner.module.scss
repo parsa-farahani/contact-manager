@@ -1,0 +1,37 @@
+.spinner {
+   position: relative;
+   width: 80px;
+   height: 80px;
+   background-image: conic-gradient(var(--c-pink), var(--c-blue), transparent);
+   border-radius: 50%;
+   // mask-image: radial-gradient(transparent, transparent 60%, black 60%, black 100%);
+
+   animation: spinner-spin .8s forwards linear infinite;
+
+   &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: conic-gradient(var(--c-pink), var(--c-blue), transparent);
+      border-radius: 50%;
+      // mask-image: radial-gradient(transparent, transparent 60%, black 60%, black 100%);
+      filter: blur(40px);
+   }
+}
+
+@keyframes spinner-spin {
+   from {
+      transform: rotate(0deg);
+   }
+
+   to {
+      transform: rotate(-360deg);
+   }
+}
+
+.spinner__inner {
+   position: absolute;
+   inset: 4px;
+   border-radius: 50%;
+   background: var(--c-bg);
+}
